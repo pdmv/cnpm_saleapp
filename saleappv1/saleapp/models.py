@@ -16,7 +16,7 @@ class User(db.Model, UserMixin):
     avatar = Column(String(100))
     username = Column(String(50), unique=True)
     password = Column(String(50))
-    role = Column(Enum(UserRole), default=UserRole.USER)
+    user_role = Column(Enum(UserRole), default=UserRole.USER)
 
     def __str__(self):
         return self.name
@@ -64,6 +64,7 @@ if __name__ == '__main__':
         import hashlib
         u = User(name='admin', username='admin',
                  avatar='https://res.cloudinary.com/dxxwcby8l/image/upload/v1679731974/jlad6jqdc69cjrh9zggq.jpg',
-                 password=str(hashlib.md5("123456".encode('utf-8')).hexdigest()))
+                 password=str(hashlib.md5("123456".encode('utf-8')).hexdigest()),
+                 user_role=UserRole.ADMIN)
         db.session.add(u)
         db.session.commit()

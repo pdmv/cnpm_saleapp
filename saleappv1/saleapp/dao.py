@@ -3,17 +3,11 @@ from saleapp import app, db
 import hashlib
 
 
-def register(name, avatar, username, password):
-    password = str(hashlib.md5(password.strip().encode('utf-8')).hexdigest())
-    u = User(name=name, avatar=avatar, username=username, password=password)
-    db.session.add(u)
-    db.session.commit()
-
-
 def load_categories():
     return Category.query.all()
     # with open('data/categories.json', encoding='utf-8') as f:
     #     return json.load(f)
+
 
 def count_product():
     return Product.query.count()
@@ -63,6 +57,13 @@ def auth_user(username, password):
     password = str(hashlib.md5(password.strip().encode('utf-8')).hexdigest())
     return User.query.filter(User.username.__eq__(username.strip()),
                              User.password.__eq__(password)).first()
+
+
+def add_user(name, username, password, avatar):
+    password = str(hashlib.md5(password.strip().encode('utf-8')).hexdigest())
+    u = User(name=name, username=username, password=password, avatar=avatar)
+    db.session.add(u)
+    db.session.commit()
 
 
 if __name__ == '__main__':
