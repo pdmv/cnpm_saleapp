@@ -19,6 +19,7 @@ class User(db.Model, UserMixin):
     password = Column(String(50))
     user_role = Column(Enum(UserRole), default=UserRole.USER)
     receipts = relationship('Receipt', backref='user', lazy=True)
+    comments = relationship('Comment', backref='user', lazy=True)
 
     def __str__(self):
         return self.name
@@ -41,6 +42,7 @@ class Product(db.Model):
                    default='https://res.cloudinary.com/dxxwcby8l/image/upload/v1679731974/jlad6jqdc69cjrh9zggq.jpg')
     category_id = Column(Integer, ForeignKey(Category.id), nullable=False)
     details = relationship('ReceiptDetails', backref='product', lazy=True)
+    comments = relationship('Comment', backref='product', lazy=True)
 
     def __str__(self):
         return self.name
@@ -63,6 +65,12 @@ class ReceiptDetails(Base):
     quantity = Column(Integer, default=0)
     unit_price = Column(Float, default=0)
     receipt_id = Column(Integer, ForeignKey(Receipt.id), nullable=False)
+    product_id = Column(Integer, ForeignKey(Product.id), nullable=False)
+
+
+class Comment(Base):
+    content = Column(String(255), nullable=False)
+    user_id = Column(Integer, ForeignKey(User.id), nullable=False)
     product_id = Column(Integer, ForeignKey(Product.id), nullable=False)
 
 

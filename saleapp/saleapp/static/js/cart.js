@@ -55,14 +55,15 @@ function deleteCart(productId) {
     }
 }
 
-function pay():
+function pay() {
     if (confirm("Bạn muốn thanh toán?") === true) {
         fetch('/api/pay', {
             method: 'post'
         }).then(res => res.json()).then(data => {
             if (data.status === 200)
-                loaction.reload();
+                location.reload();
             else
                 alert("Loioxiiiiiii!!")
         })
     }
+}
