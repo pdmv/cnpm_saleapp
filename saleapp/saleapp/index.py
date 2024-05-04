@@ -22,7 +22,8 @@ def index():
 @app.route('/products/<int:id>')
 def details(id):
     product = dao.get_product_by_id(product_id=id)
-    return render_template('product-details.html', product=product)
+    comments = dao.get_comment(product_id=id)
+    return render_template('product-details.html', product=product, comments=comments)
 
 
 @app.route('/login', methods=['get', 'post'])

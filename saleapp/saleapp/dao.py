@@ -1,7 +1,9 @@
-from saleapp.models import Category, Product, User, Receipt, ReceiptDetails
+from saleapp.models import Category, Product, User, Receipt, ReceiptDetails, Comment
 from saleapp import app, db
 import hashlib
 from flask_login import current_user
+from sqlalchemy import func
+from datetime import datetime
 
 
 def load_categories():
@@ -78,6 +80,37 @@ def add_receipt(cart):
             db.session.add(d)
 
         db.session.commit()
+
+
+def count_products_by_cate():
+    return db.session.query(Category.id, Category.name, func.count(Product.id))\
+        .join(Product, Product.category_id.__eq__(Category.id), isouter=True)\
+        .group_by(Category.id).all()
+
+
+def stats_revenue_by_product(kw=None):
+    query = db.session.query(Product.id, Product.name, func.sum(ReceiptDetails.quantity*ReceiptDetails.unit_price))\
+        .join(ReceiptDetails, ReceiptDetails.product_id.__eq__(Product.id), isouter=True)
+
+    if kw:
+        query = query.filter(Product.name.contains(kw))
+
+    return query.group_by(Product.id).all()
+
+
+def stats_revenue_by_period(year=datetime.now().year, period='month'):
+    query = db.session.query(func.extract(period, Receipt.created_date),
+                             func.sum(ReceiptDetails.quantity*ReceiptDetails.unit_price))\
+        .join(ReceiptDetails, ReceiptDetails.receipt_id.__eq__(Receipt.id))\
+        .filter(func.extract('year', Receipt.created_date).__eq__(year))
+
+    return query.group_by(func.extract(period, Receipt.created_date))\
+        .order_by(func.extract(period, Receipt.created_date)).all()
+
+
+def get_comment(product_id):
+    return Comment.query.filter(Comment.product_id.__eq__(product_id)).order_by(-Comment.id)
+
 
 if __name__ == '__main__':
     print(load_categories())
