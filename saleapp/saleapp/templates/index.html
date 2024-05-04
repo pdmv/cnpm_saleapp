@@ -12,16 +12,16 @@
 </ul>
 {% endif %}
 
-<div class="row">
+<div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
     {% for p in products %}
-    <div class="col-md-3 col-12" style="padding:0.7rem;">
-        <div class="card">
-            <img class="card-img-top" src="{{ p.image }}" alt="{{ p.name }}">
+    <div class="col">
+        <div class="card h-100">
+            <img src="{{ p.image }}" class="card-img-top" alt="{{ p.name }}">
             <div class="card-body">
-                <h4 class="card-title">{{ p.name }}</h4>
-                <p class="card-text">{{ p.price }} VNĐ</p>
-                <a href="/products/{{p.id}}" class="btn btn-primary">Xem chi tiết</a>
-                <a href="javascript:;" onclick="addToCart({{p.id}}, '{{p.name}}', {{p.price}})" class="btn btn-danger">Đặt hàng</a>
+                <h5 class="card-title">{{ p.name }}</h5>
+                <p class="card-text">{{ '{:,.0f}'.format(p.price)|replace(',', '.') }} VNĐ</p>
+                <a href="/products/{{ p.id }}" class="btn btn-primary">Tìm hiểu thêm</a>
+                <button onclick="addToCart({{ p.id }}, '{{ p.name }}', {{ p.price }})" class="btn btn-danger">Mua</button>
             </div>
         </div>
     </div>

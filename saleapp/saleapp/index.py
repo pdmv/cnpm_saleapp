@@ -168,6 +168,18 @@ def pay():
         return jsonify({'status': 200})
 
 
+@app.route('/api/products/<int:id>/comments', methods=['post'])
+@login_required
+def add_comment(id):
+    data = request.json
+    c = dao.add_comment(product_id=id, content=data.get('content'))
+
+    return jsonify({'id': c.id, 'content': c.content, 'user': {
+        'name': c.user.username,
+        'avatar': c.user.avatar
+    }})
+
+
 @app.context_processor
 def common_attributes():
     return {

@@ -58,7 +58,7 @@ class MyAdminIndexView(AdminIndexView):
         return self.render('admin/index.html', stats=stats)
 
 
-admin = Admin(app, name='E-commerce Website', template_mode='bootstrap4', index_view=MyAdminIndexView())
+admin = Admin(app, name='Apple Simple Store', template_mode='bootstrap4', index_view=MyAdminIndexView())
 admin.add_view(MyCategoryView(Category, db.session))
 admin.add_view(MyProductView(Product, db.session))
 admin.add_view(StatsView(name='Thống kê'))

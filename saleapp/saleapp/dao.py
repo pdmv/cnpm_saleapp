@@ -112,5 +112,13 @@ def get_comment(product_id):
     return Comment.query.filter(Comment.product_id.__eq__(product_id)).order_by(-Comment.id)
 
 
+def add_comment(product_id, content):
+    c = Comment(product_id=product_id, content=content, user_id=current_user.id)
+    db.session.add(c)
+    db.session.commit()
+
+    return c
+
+
 if __name__ == '__main__':
     print(load_categories())

@@ -14,7 +14,7 @@ class UserRole(RoleEnum):
 class User(db.Model, UserMixin):
     id = Column(Integer, autoincrement=True, primary_key=True)
     name = Column(String(100))
-    avatar = Column(String(100))
+    avatar = Column(String(255))
     username = Column(String(50), unique=True)
     password = Column(String(50))
     user_role = Column(Enum(UserRole), default=UserRole.USER)
@@ -38,7 +38,7 @@ class Product(db.Model):
     id = Column(Integer, autoincrement=True, primary_key=True)
     name = Column(String(50), unique=True, nullable=False)
     price = Column(Float, default=0)
-    image = Column(String(100),
+    image = Column(String(255),
                    default='https://res.cloudinary.com/dxxwcby8l/image/upload/v1679731974/jlad6jqdc69cjrh9zggq.jpg')
     category_id = Column(Integer, ForeignKey(Category.id), nullable=False)
     details = relationship('ReceiptDetails', backref='product', lazy=True)
@@ -76,26 +76,37 @@ class Comment(Base):
 
 if __name__ == '__main__':
     with app.app_context():
-        db.create_all()
-        # c1 = Category(name='Mobile')
-        # c2 = Category(name='Tablet')
-        # c3 = Category(name='Laptop')
-        # db.session.add_all([c1, c2, c3])
-        # db.session.commit()
-        #
-        # import json
-        # with open('data/products.json', encoding='utf-8') as f:
-        #     products = json.load(f)
-        #     for p in products:
-        #         prod = Product(**p)
-        #         db.session.add(prod)
-        #
-        # db.session.commit()
-        #
-        # import hashlib
-        # u = User(name='admin', username='admin',
-        #          avatar='https://res.cloudinary.com/dxxwcby8l/image/upload/v1679731974/jlad6jqdc69cjrh9zggq.jpg',
-        #          password=str(hashlib.md5("123456".encode('utf-8')).hexdigest()),
-        #          user_role=UserRole.ADMIN)
-        # db.session.add(u)
-        # db.session.commit()
+        # db.create_all()
+
+        import json
+        import hashlib
+
+        with open('data/products.json', encoding='utf-8') as f:
+            products = json.load(f)
+            for p in products:
+                prod = Product(**p)
+                db.session.add(prod)
+
+        with open('data/categories.json', encoding='utf-8') as f:
+            cates = json.load(f)
+            for c in cates:
+                cate = Category(**c)
+                db.session.add(cate)
+
+        admin = User(name='admin', username='admin',
+                 avatar='https://res.cloudinary.com/dyuafq1hx/image/upload/v1709253624/bb54dtyptzcrpuiygwgr.png',
+                 password=str(hashlib.md5("Admin@123".encode('utf-8')).hexdigest()),
+                 user_role=UserRole.ADMIN)
+        db.session.add(admin)
+
+        with open('data/users.json', encoding='utf-8') as f:
+            users = json.load(f)
+            for u in users:
+                user = User(name=u['name'],
+                            username=u['username'],
+                            avatar=u['avatar'],
+                            password=str(hashlib.md5(u['password'].encode('utf-8')).hexdigest()),
+                            user_role=UserRole.USER)
+                db.session.add(user)
+
+        db.session.commit()

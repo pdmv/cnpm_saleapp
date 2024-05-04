@@ -4,43 +4,90 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1baad5dd-2a3a-4ce9-a71a-664cfc671fac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/saleapp/static/js/chart.js" afterDir="false" />
+    <list default="true" id="768cfaa6-2a8d-4164-919b-308ffda3c00b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/saleapp/data/users.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/saleapp/static/js/details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/saleapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/saleapp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saleapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/saleapp/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saleapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/saleapp/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saleapp/dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/saleapp/dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saleapp/data/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/saleapp/data/categories.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saleapp/data/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/saleapp/data/products.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saleapp/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/saleapp/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saleapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/saleapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saleapp/static/js/chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/saleapp/static/js/chart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saleapp/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/saleapp/templates/admin/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saleapp/templates/admin/stats.html" beforeDir="false" afterPath="$PROJECT_DIR$/saleapp/templates/admin/stats.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saleapp/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/saleapp/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saleapp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/saleapp/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saleapp/templates/layout/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/saleapp/templates/layout/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saleapp/templates/layout/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/saleapp/templates/layout/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saleapp/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/saleapp/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saleapp/templates/product-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/saleapp/templates/product-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saleapp/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/saleapp/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saleapp/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/saleapp/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2fzSU8srcHVwPwlbg5OUmdV5u8o" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;pdmv&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/pdmv/cnpm_saleapp",
+    "accountId": "098c56bc-6f07-41b6-a4d1-4e6c65652045"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2fzYT9O2rI4tmw11smJNpY27jzR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/Desktop/cnpm_saleapp/saleapp&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.index.executor": "Run",
+    "Python.models.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/phamdominhvuong/Documents/Programming/GitHub/cnpm_saleapp/saleapp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python.index">
     <configuration name="index" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="saleapp" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -51,6 +98,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/saleapp/index.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -62,6 +110,7 @@
     </configuration>
     <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="saleapp" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -72,7 +121,31 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/saleapp/models.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="saleapp" type="PythonConfigurationType" factoryName="Python">
+      <module name="saleapp" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/saleapp/__init__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -88,26 +161,34 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PY-241.14494.241" />
+        <option value="bundled-python-sdk-0509580d9d50-28c9f5db9ffe-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.14494.241" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1baad5dd-2a3a-4ce9-a71a-664cfc671fac" name="Changes" comment="" />
-      <created>1714802425496</created>
+      <changelist id="768cfaa6-2a8d-4164-919b-308ffda3c00b" name="Changes" comment="" />
+      <created>1714805380544</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1714802425496</updated>
+      <updated>1714805380544</updated>
+      <workItem from="1714805381763" duration="74000" />
+      <workItem from="1714820627511" duration="56000" />
+      <workItem from="1714820689050" duration="330000" />
+      <workItem from="1714821021407" duration="10739000" />
     </task>
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/saleapp$models.coverage" NAME="models Coverage Results" MODIFIED="1714825140780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/saleapp" />
+    <SUITE FILE_PATH="coverage/saleapp$index.coverage" NAME="index Coverage Results" MODIFIED="1714831126151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/saleapp" />
   </component>
 </project>

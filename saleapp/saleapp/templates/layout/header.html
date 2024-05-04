@@ -1,11 +1,12 @@
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/">E-commerce App</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/">Apple Simple Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav me-auto">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link active" href="/">Trang chủ</a>
                 </li>
@@ -14,37 +15,45 @@
                     <a class="nav-link" href="/?category_id={{ c.id }}">{{ c.name }}</a>
                 </li>
                 {% endfor %}
-
-
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Nhập từ khóa..." aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Tìm</button>
+            </form>
+            <ul class="navbar-nav">
                 {% if current_user.is_authenticated %}
-                <li class="nav-item">
-                    <a class="nav-link text-info" href="/login">
-                        <img src="{{ current_user.avatar }}" width="25" class="rounded img-fluid"/> Chào {{
-                        current_user.username }}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="{{ current_user.avatar }}" width="25" class="rounded-circle img-fluid"
+                            alt="Avatar">
+                        Chào {{ current_user.username }}
                     </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-info" href="/logout">&#128110; Đăng xuất</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Hồ sơ</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/logout">Đăng xuất</a></li>
+                    </ul>
                 </li>
                 {% else %}
                 <li class="nav-item">
-                    <a class="nav-link text-info" href="/login">&#128110; Đăng nhập</a>
+                    <a class="nav-link" href="/login">Đăng nhập</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-success" href="/register">&#128110; Đăng ký</a>
+                    <a class="nav-link" href="/register">Đăng ký</a>
                 </li>
                 {% endif %}
                 <li class="nav-item">
-                    <a class="nav-link text-success" href="/cart">&#128722; <span
-                            class="badge bg-danger cart-counter">{{ cart_stats.total_quantity }}</span></a>
+                    <a class="nav-link" href="/cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path
+                                d="M0 0h1l1.46 7.293a.5.5 0 0 0 .5.407h11.08a.5.5 0 0 0 .5-.407L16 1H4.854l-.67 3.355H15.5a.5.5 0 0 0 0-1h-11l-.36-1.822L2.235 14.56A.5.5 0 0 0 2.73 15h10.54a.5.5 0 0 0 .495-.437l1.352-7.641a.5.5 0 0 0-.495-.563H3.915L3.328 1H1a.5.5 0 0 0 0 1h1.58l.438 2.194H1a.5.5 0 0 0 0 1z" />
+                        </svg>
+                        <span class="badge bg-danger">{{ cart_stats.total_quantity }}</span>
+                    </a>
                 </li>
-
-
             </ul>
-            <form class="d-flex" method="get" action="/">
-                <input class="form-control me-2" name="q" type="text" placeholder="Nhập từ khóa...">
-                <button class="btn btn-primary" type="submit">Tìm</button>
-            </form>
         </div>
     </div>
 </nav>

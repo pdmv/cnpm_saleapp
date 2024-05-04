@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Phạm Đỗ Minh Vương",
+    "avatar": "https://res.cloudinary.com/dyuafq1hx/image/upload/v1708760622/dcz7wz2hpdghvd794scp.jpg",
+    "username": "user1",
+    "password": "user1"
+  },
+  {
+    "name": "Nguyễn Văn Hai",
+    "avatar": "https://res.cloudinary.com/dyuafq1hx/image/upload/v1708760662/ar849b4zgg9erfxvpkuw.jpg",
+    "username": "user2",
+    "password": "user2"
+  },
+  {
+    "name": "Trần Văn Ba",
+    "avatar": "https://res.cloudinary.com/dyuafq1hx/image/upload/v1708760817/iltvnuha7ta0t4ycwflt.jpg",
+    "username": "user3",
+    "password": "user3"
+  },
+  {
+    "name": "Nguyễn Thị Ngọc Tư",
+    "avatar": "https://res.cloudinary.com/dyuafq1hx/image/upload/v1708761287/mrc4nggbnjhqyfwlg6cm.jpg",
+    "username": "user4",
+    "password": "user4"
+  }
+]

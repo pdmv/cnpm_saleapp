@@ -1,49 +1,170 @@
-[{
-  "id": 1,
-  "name": "iPhone 13 ProMax",
-  "price": 27000000,
-  "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1679731974/jlad6jqdc69cjrh9zggq.jpg",
-  "category_id": 1
-}, {
-  "id": 2,
-  "name": "Galaxy S23 Ultra",
-  "price": 27000000,
-  "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1658027062/dqgc5uq8hrz1xgwe445v.jpg",
-  "category_id": 1
-}, {
-  "id": 3,
-  "name": "iPhone 13",
-  "price": 27000000,
-  "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1679731974/jlad6jqdc69cjrh9zggq.jpg",
-  "category_id": 1
-}, {
-  "id": 4,
-  "name": "iPhone 15",
-  "price": 27000000,
-  "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1658027062/dqgc5uq8hrz1xgwe445v.jpg",
-  "category_id": 1
-}, {
-  "id": 5,
-  "name": "Galaxy Z-Fold 5",
-  "price": 27000000,
-  "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1679731974/jlad6jqdc69cjrh9zggq.jpg",
-  "category_id": 1
-}, {
-  "id": 6,
-  "name": "iPad Pro 2022",
-  "price": 35000000,
-  "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1679126974/vz4jnpuqydszbtrcbcnd.jpg",
-  "category_id": 2
-}, {
-  "id": 7,
-  "name": "Galaxy Tab S9",
-  "price": 28000000,
-  "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1647248722/r8sjly3st7estapvj19u.jpg",
-  "category_id": 2
-}, {
-  "id": 9,
-  "name": "Mac Book Pro 14' 2021",
-  "price": 28000000,
-  "image": "https://res.cloudinary.com/dxxwcby8l/image/upload/v1670491542/pro14_q73lhp.webp",
-  "category_id": 3
-}]
+[
+  {
+    "id": 1,
+    "name": "MacBook Air 13 inch với chip M2",
+    "price": 24999000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mba13-m2-digitalmat-gallery-1-202402?wid=728&hei=666&fmt=png-alpha&.v=1707263976493",
+    "category_id": 1
+  },
+  {
+    "id": 2,
+    "name": "MacBook Pro 14 inch",
+    "price": 39999000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp-14-digitalmat-gallery-1-202310?wid=728&hei=666&fmt=png-alpha&.v=1696971522628",
+    "category_id": 1
+  },
+  {
+    "id": 3,
+    "name": "iMac",
+    "price": 36999000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac24-digitalmat-gallery-1-202310?wid=728&hei=666&fmt=png-alpha&.v=1697559004117",
+    "category_id": 1
+  },
+  {
+    "id": 4,
+    "name": "Mac mini",
+    "price": 14999000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mac-mini-digitalmat-gallery-1-202301?wid=728&hei=666&fmt=png-alpha&.v=1670038163709",
+    "category_id": 1
+  },
+  {
+    "id": 5,
+    "name": "Mac Studio",
+    "price": 54999000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mac-studio-digitalmat-gallery-1-202306?wid=728&hei=666&fmt=png-alpha&.v=1683914326094",
+    "category_id": 1
+  },
+  {
+    "id": 6,
+    "name": "Studio Display",
+    "price": 39999000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/studio-display-digitalmat-gallery-1-202203?wid=728&hei=666&fmt=png-alpha&.v=1645207692041",
+    "category_id": 1
+  },
+  {
+    "id": 7,
+    "name": "Mac Pro",
+    "price": 179999000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mac-pro-digitalmat-gallery-1-202306?wid=728&hei=666&fmt=jpeg&qlt=90&.v=1683842315753",
+    "category_id": 1
+  },
+  {
+    "id": 8,
+    "name": "Pro Display XDR",
+    "price": 126699000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/proxdr-digitalmat-gallery-2-202111?wid=728&hei=666&fmt=jpeg&qlt=90&.v=1635206790000",
+    "category_id": 1
+  },
+  {
+    "id": 9,
+    "name": "iPad Pro 11 inch",
+    "price": 21199000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipadpro11-digitalmat-gallery-1-202210?wid=728&hei=666&fmt=png-alpha&.v=1664477161220",
+    "category_id": 2
+  },
+  {
+    "id": 10,
+    "name": "iPad Air",
+    "price": 15599000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipadair-digitalmat-gallery-1-202203?wid=728&hei=666&fmt=png-alpha&.v=1644962768135",
+    "category_id": 2
+  },
+  {
+    "id": 11,
+    "name": "iPad (thế hệ thứ 10)",
+    "price": 11499000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-digitalmat-gallery-1-202210?wid=728&hei=666&fmt=png-alpha&.v=1664392871297",
+    "category_id": 2
+  },
+  {
+    "id": 12,
+    "name": "iPad (thế hệ thứ 9)",
+    "price": 8399000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-9th-gen-digitalmat-gallery-1-202310?wid=730&hei=666&fmt=png-alpha&.v=1696004296190",
+    "category_id": 2
+  },
+  {
+    "id": 13,
+    "name": "iPad mini",
+    "price": 12799000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-mini-digitalmat-gallery-1-202111?wid=730&hei=666&fmt=png-alpha&.v=1635183174000",
+    "category_id": 2
+  },
+  {
+    "id": 14,
+    "name": "iPhone 15 Pro",
+    "price": 28999000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone15pro-digitalmat-gallery-1-202309?wid=728&hei=666&fmt=png-alpha&.v=1693346851364",
+    "category_id": 3
+  },
+  {
+    "id": 15,
+    "name": "iPhone 15",
+    "price": 22999000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone15-digitalmat-gallery-1-202309?wid=728&hei=666&fmt=png-alpha&.v=1693346853713",
+    "category_id": 3
+  },
+  {
+    "id": 16,
+    "name": "iPhone 14",
+    "price": 19999000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone14-digitalmat-gallery-1-202303?wid=728&hei=666&fmt=png-alpha&.v=1679072735068",
+    "category_id": 3
+  },
+  {
+    "id": 17,
+    "name": "iPhone 13",
+    "price": 17299000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone13-digitalmat-gallery-1-202203?wid=728&hei=666&fmt=png-alpha&.v=1677662648568",
+    "category_id": 3
+  },
+  {
+    "id": 18,
+    "name": "iPhone SE",
+    "price": 11999000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphonese-digitalmat-gallery-1-202203?wid=728&hei=666&fmt=png-alpha&.v=1644987579596",
+    "category_id": 3
+  },
+  {
+    "id": 19,
+    "name": "Apple Watch Series 9",
+    "price": 10499000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/watch-s9-digitalmat-gallery-1-202309_GEO_VN?wid=728&hei=666&fmt=png-alpha&.v=1693846403899",
+    "category_id": 4
+  },
+  {
+    "id": 20,
+    "name": "Apple Watch Ultra 2",
+    "price": 21999000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/watch-ultra2-digitalmat-gallery-1-202309_GEO_VN?wid=728&hei=666&fmt=jpeg&qlt=90&.v=1693846571456",
+    "category_id": 4
+  },
+  {
+    "id": 21,
+    "name": "Apple Watch SE",
+    "price": 6399000,
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/watch-se-digitalmat-gallery-1-202403?wid=728&hei=666&fmt=png-alpha&.v=1708659557199",
+    "category_id": 4
+  },
+  {
+    "id": 22,
+    "name": "AirPods (thế hệ thứ 2)",
+    "price": 3499000,
+    "image": "https://www.apple.com/v/airpods-2nd-generation/f/images/specs/airpods__e34dw457b7iq_large_2x.jpg",
+    "category_id": 5
+  },
+  {
+    "id": 23,
+    "name": "AirPods (thế hệ thứ 3)",
+    "price": 4499000,
+    "image": "https://www.apple.com/v/airpods/shared/compare/d/images/compare/compare_airpods_3rd_gen__dyuzfy04ht0m_large_2x.png",
+    "category_id": 5
+  },
+  {
+    "id": 24,
+    "name": "AirPods Pro (thế hệ thứ 2)",
+    "price": 6199000,
+    "image": "https://www.apple.com/v/airpods/shared/compare/d/images/compare/compare_airpods_pro__e9uzt0mzviem_large_2x.png",
+    "category_id": 5
+  }
+]
